@@ -1,0 +1,23 @@
+House Price Prediction — California Housing (20,640 houses)
+Target: MedHouseVal (median house value, in $100,000s)
+Train: 16512, Test: 4128, split 80/20, random_state=42
+
+            Model     R2    MAE   RMSE  CV_R2_mean  CV_R2_std
+Linear Regression 0.6535 0.4874 0.6738      0.6593     0.0195
+    Random Forest 0.8065 0.3280 0.5035      0.8039     0.0052
+Gradient Boosting 0.7788 0.3668 0.5384      0.7897     0.0026
+
+Top features (Random Forest):
+MedInc                      0.522
+AveOccup                    0.126
+Latitude                    0.082
+Longitude                   0.082
+HouseAge                    0.052
+bedrooms_ratio              0.029
+rooms_per_household         0.026
+AveRooms                    0.025
+AveBedrms                   0.022
+population_per_household    0.018
+Population                  0.016
+
+Notes: prices are capped at $500,000 in the dataset. This is California, USA data — not Bangladesh house prices.
